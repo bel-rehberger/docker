@@ -1,3 +1,6 @@
 [submodule "ubunu-install-test/ubuntu_install_scripts"]
 	path = ubunu-install-test/ubuntu_install_scripts
 	url = https://github.com/bel-rehberger/ubuntu_install_scripts.git
+[submodule "ubuntu-install-test/ubuntu_install_scripts"]
+	path = ubuntu-install-test/ubuntu_install_scripts
+	url = git@github.com:bel-rehberger/ubuntu_install_scripts.git
