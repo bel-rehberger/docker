@@ -1,42 +1,42 @@
-Sending build context to Docker daemon  139.8kB
+Sending build context to Docker daemon  41.47kB
 Step 1/6 : FROM ubuntu:20.04
  ---> d70eaf7277ea
 Step 2/6 : COPY . /app
- ---> d802ccc672b7
+ ---> 0ddde4953fbc
 Step 3/6 : ENV DEBIAN_FRONTEND=noninteractive
- ---> Running in f7444f5502e3
-Removing intermediate container f7444f5502e3
- ---> b2087594da40
+ ---> Running in d7b884360d4f
+Removing intermediate container d7b884360d4f
+ ---> f9c7ec9e9600
 Step 4/6 : RUN apt-get update
- ---> Running in 85905e49a931
-Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [107 kB]
-Get:2 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+ ---> Running in 8f6d290ddc8d
+Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [107 kB]
 Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [111 kB]
-Get:4 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [1170 B]
-Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [98.3 kB]
-Get:6 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [638 kB]
-Get:7 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
-Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [98.3 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [11.3 MB]
+Get:7 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [1170 B]
+Get:8 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [638 kB]
 Get:9 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [85.3 kB]
-Get:10 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [437 kB]
+Get:10 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [438 kB]
 Get:11 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [177 kB]
-Get:12 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [11.3 MB]
-Get:13 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [801 kB]
-Get:14 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [854 kB]
-Get:15 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [104 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [854 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [806 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [107 kB]
 Get:16 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [21.6 kB]
 Get:17 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [4277 B]
-Fetched 16.4 MB in 2s (6924 kB/s)
+Fetched 16.4 MB in 2s (6958 kB/s)
 Reading package lists...
-Removing intermediate container 85905e49a931
- ---> 77e1329e88d4
+Removing intermediate container 8f6d290ddc8d
+ ---> 1ecb90a7bd5f
 Step 5/6 : RUN chmod 777 /app/ubuntu_install_scripts/install_script.sh
- ---> Running in e501cc9b9126
-Removing intermediate container e501cc9b9126
- ---> 21c0800cceb1
+ ---> Running in 78c241f7c93f
+Removing intermediate container 78c241f7c93f
+ ---> 543813ecacfb
 Step 6/6 : CMD ./app/ubuntu_install_scripts/install_script.sh
- ---> Running in 1d2c7b801e63
-Removing intermediate container 1d2c7b801e63
- ---> a4c9b6734ea1
-Successfully built a4c9b6734ea1
+ ---> Running in b5537bee90b3
+Removing intermediate container b5537bee90b3
+ ---> 9fef33bccbc6
+Successfully built 9fef33bccbc6
 Successfully tagged ubuntu-test-install:latest
